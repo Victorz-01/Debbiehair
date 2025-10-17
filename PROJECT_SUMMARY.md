@@ -24,9 +24,9 @@
 
 ### 4. Design System ✓
 **Color Palette:**
-- Primary: Gold (#d4a574) with dark/light variants
+- Primary: Green (#2d7a4f) with dark/light variants
 - Secondary: Dark charcoal (#2c2c2c) with variants
-- Accent: Cream (#f5e6d3)
+- Accent: Light green (#e8f5e9)
 - Utility colors: success, warning, error, info
 - Grayscale: Complete range from white to black
 
