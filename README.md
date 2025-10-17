@@ -29,7 +29,7 @@ debbiehair/
 
 ### Design System
 The project uses a comprehensive CSS variable system for:
-- **Color Palette**: Primary gold (#d4a574), secondary dark tones, accent colors
+- **Color Palette**: Primary green (#2d7a4f), secondary dark tones, accent colors
 - **Typography**: Playfair Display for headings, Poppins for body text
 - **Spacing Scale**: Consistent spacing from xs (0.25rem) to 5xl (8rem)
 - **Font Sizes**: From xs (0.75rem) to 5xl (3rem)
