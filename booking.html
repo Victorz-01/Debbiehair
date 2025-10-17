@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Book an appointment at Debbiehair - Professional hair care and styling services">
+    <meta name="keywords" content="hair salon appointment, book hair styling, hair care appointment, Debbiehair booking">
+    <meta name="author" content="Debbiehair">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="assets/css/styles.css">
+    
+    <title>Book Appointment - Debbiehair</title>
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <h1 class="logo-text">Debbiehair</h1>
+                </div>
+                
+                <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+                
+                <nav class="main-nav" id="mainNav">
+                    <ul class="nav-list">
+                        <li class="nav-item"><a href="index.html#home" class="nav-link">Home</a></li>
+                        <li class="nav-item"><a href="index.html#services" class="nav-link">Services</a></li>
+                        <li class="nav-item"><a href="index.html#gallery" class="nav-link">Gallery</a></li>
+                        <li class="nav-item"><a href="index.html#about" class="nav-link">About</a></li>
+                        <li class="nav-item"><a href="index.html#contact" class="nav-link">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <section class="booking-section">
+            <div class="container">
+                <div class="booking-header">
+                    <h2 class="booking-title">Book Your Appointment</h2>
+                    <p class="booking-subtitle">Fill out the form below and we'll get back to you shortly to confirm your appointment</p>
+                </div>
+
+                <div class="booking-form-wrapper">
+                    <form id="bookingForm" class="booking-form" novalidate>
+                        <div class="form-group">
+                            <label for="fullName" class="form-label">Full Name <span class="required">*</span></label>
+                            <input 
+                                type="text" 
+                                id="fullName" 
+                                name="fullName" 
+                                class="form-input" 
+                                placeholder="Enter your full name"
+                                required
+                            >
+                            <span class="form-error" id="fullNameError"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email Address <span class="required">*</span></label>
+                            <input 
+                                type="email" 
+                                id="email" 
+                                name="email" 
+                                class="form-input" 
+                                placeholder="your.email@example.com"
+                                required
+                            >
+                            <span class="form-error" id="emailError"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone" class="form-label">Phone Number <span class="required">*</span></label>
+                            <input 
+                                type="tel" 
+                                id="phone" 
+                                name="phone" 
+                                class="form-input" 
+                                placeholder="(555) 123-4567"
+                                required
+                            >
+                            <span class="form-error" id="phoneError"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="address" class="form-label">Address <span class="required">*</span></label>
+                            <textarea 
+                                id="address" 
+                                name="address" 
+                                class="form-input form-textarea" 
+                                placeholder="Enter your full address"
+                                rows="3"
+                                required
+                            ></textarea>
+                            <span class="form-error" id="addressError"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="hairStyle" class="form-label">Style of Hair <span class="required">*</span></label>
+                            <select id="hairStyle" name="hairStyle" class="form-input form-select" required>
+                                <option value="">Select a hair style</option>
+                                <option value="braids">Braids</option>
+                                <option value="weave">Weave</option>
+                                <option value="wigs">Wigs</option>
+                                <option value="natural-styling">Natural Hair Styling</option>
+                                <option value="locs">Locs</option>
+                                <option value="cornrows">Cornrows</option>
+                                <option value="twist">Twist</option>
+                                <option value="color-treatment">Color Treatment</option>
+                                <option value="cut-trim">Cut & Trim</option>
+                                <option value="other">Other</option>
+                            </select>
+                            <span class="form-error" id="hairStyleError"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">Service Location <span class="required">*</span></label>
+                            <div class="radio-group">
+                                <div class="radio-item">
+                                    <input 
+                                        type="radio" 
+                                        id="studio" 
+                                        name="serviceLocation" 
+                                        value="studio"
+                                        class="radio-input"
+                                        required
+                                    >
+                                    <label for="studio" class="radio-label">
+                                        <span class="radio-custom"></span>
+                                        <span class="radio-text">
+                                            <strong>Studio Service</strong>
+                                            <small>Visit our salon</small>
+                                        </span>
+                                    </label>
+                                </div>
+                                <div class="radio-item">
+                                    <input 
+                                        type="radio" 
+                                        id="home" 
+                                        name="serviceLocation" 
+                                        value="home"
+                                        class="radio-input"
+                                        required
+                                    >
+                                    <label for="home" class="radio-label">
+                                        <span class="radio-custom"></span>
+                                        <span class="radio-text">
+                                            <strong>Home Service</strong>
+                                            <small>We come to you</small>
+                                        </span>
+                                    </label>
+                                </div>
+                            </div>
+                            <span class="form-error" id="serviceLocationError"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="appointmentDate" class="form-label">Preferred Appointment Date <span class="required">*</span></label>
+                            <input 
+                                type="date" 
+                                id="appointmentDate" 
+                                name="appointmentDate" 
+                                class="form-input" 
+                                required
+                            >
+                            <span class="form-error" id="appointmentDateError"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="appointmentTime" class="form-label">Preferred Time <span class="required">*</span></label>
+                            <select id="appointmentTime" name="appointmentTime" class="form-input form-select" required>
+                                <option value="">Select a time</option>
+                                <option value="09:00">9:00 AM</option>
+                                <option value="10:00">10:00 AM</option>
+                                <option value="11:00">11:00 AM</option>
+                                <option value="12:00">12:00 PM</option>
+                                <option value="13:00">1:00 PM</option>
+                                <option value="14:00">2:00 PM</option>
+                                <option value="15:00">3:00 PM</option>
+                                <option value="16:00">4:00 PM</option>
+                                <option value="17:00">5:00 PM</option>
+                                <option value="18:00">6:00 PM</option>
+                            </select>
+                            <span class="form-error" id="appointmentTimeError"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="additionalNotes" class="form-label">Additional Notes</label>
+                            <textarea 
+                                id="additionalNotes" 
+                                name="additionalNotes" 
+                                class="form-input form-textarea" 
+                                placeholder="Any special requests or additional information"
+                                rows="4"
+                            ></textarea>
+                        </div>
+
+                        <div class="form-actions">
+                            <button type="submit" class="btn btn-primary btn-large">Book Appointment</button>
+                            <a href="index.html" class="btn btn-outline btn-large">Cancel</a>
+                        </div>
+                    </form>
+
+                    <div id="successMessage" class="success-message" style="display: none;">
+                        <div class="success-icon">✓</div>
+                        <h3 class="success-title">Appointment Request Received!</h3>
+                        <p class="success-text">Thank you for booking with Debbiehair. We'll contact you shortly to confirm your appointment details.</p>
+                        <a href="index.html" class="btn btn-primary">Return to Home</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-title">Debbiehair</h3>
+                    <p class="footer-text">Your trusted partner for professional hair care and styling.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-heading">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html#home" class="footer-link">Home</a></li>
+                        <li><a href="index.html#services" class="footer-link">Services</a></li>
+                        <li><a href="index.html#gallery" class="footer-link">Gallery</a></li>
+                        <li><a href="index.html#about" class="footer-link">About</a></li>
+                        <li><a href="index.html#contact" class="footer-link">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-heading">Contact Info</h4>
+                    <ul class="footer-info">
+                        <li class="footer-text">Email: info@debbiehair.com</li>
+                        <li class="footer-text">Phone: (555) 123-4567</li>
+                        <li class="footer-text">Address: 123 Beauty Lane</li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-heading">Hours</h4>
+                    <ul class="footer-info">
+                        <li class="footer-text">Mon-Fri: 9:00 AM - 7:00 PM</li>
+                        <li class="footer-text">Saturday: 10:00 AM - 6:00 PM</li>
+                        <li class="footer-text">Sunday: Closed</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p class="copyright">&copy; 2024 Debbiehair. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/booking.js"></script>
+</body>
+</html>
