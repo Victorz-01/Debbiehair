@@ -1,135 +1,241 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Debbiehair - Professional hair care and styling services. Expert stylists dedicated to making you look and feel your best.">
-    <meta name="keywords" content="hair salon, hair styling, hair care, professional stylists, Debbiehair">
-    <meta name="author" content="Debbiehair">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
-    <link rel="stylesheet" href="assets/css/styles.css">
-    
-    <title>Debbiehair - Professional Hair Care & Styling</title>
+  <!--
+  Trissy Beauty Lounge — Landing Page
+
+  Color Palette
+  - Ivory White: #FFFBF7
+  - Soft Beige: #EADBC8
+  - Blush Pink: #F5C9CF
+  - Muted Gold: #C7A97B
+  - Ink (Text): #2A2A2A
+  - Muted Gray: #6F6B66
+  - Line/Border: #EDE7E0
+
+  Typography
+  - Headlines: Inter Extra Bold (800)
+  - Body: Poppins (300–500)
+
+  Design: Clean white background, centered hero, large bold headline, minimal elements, rounded gradient buttons, diverse models from the back.
+  -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Trissy Beauty Lounge — Premium wigs and salon services to express your signature style." />
+  <meta name="keywords" content="wigs, salon, hair colors, stylists, beauty, Trissy Beauty Lounge" />
+  <title>Trissy Beauty Lounge — Make a bold look</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/css/trissy.css" />
 </head>
 <body>
-    <header class="site-header">
-        <div class="container">
-            <div class="header-content">
-                <div class="logo">
-                    <h1 class="logo-text">Debbiehair</h1>
-                </div>
-                
-                <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu" aria-expanded="false">
-                    <span class="hamburger-line"></span>
-                    <span class="hamburger-line"></span>
-                    <span class="hamburger-line"></span>
-                </button>
-                
-                <nav class="main-nav" id="mainNav">
-                    <ul class="nav-list">
-                        <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
-                        <li class="nav-item"><a href="#services" class="nav-link">Services</a></li>
-                        <li class="nav-item"><a href="#gallery" class="nav-link">Gallery</a></li>
-                        <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
-                        <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
-                    </ul>
-                </nav>
-            </div>
+  <div class="top-bar">60 days free return. No questions asked.</div>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#home" class="brand" aria-label="Trissy Beauty Lounge Home">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span class="brand-name">Trissy Beauty Lounge</span>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span class="bar"></span>
+      </button>
+
+      <nav class="main-nav" id="mainNav" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li><a class="nav-link" href="#home">Home</a></li>
+          <li><a class="nav-link" href="#colors">Hair Colors</a></li>
+          <li><a class="nav-link" href="#wigs">Wigs</a></li>
+          <li><a class="nav-link" href="#stylists">Stylists</a></li>
+          <li><a class="nav-link" href="#pricing">Pricing</a></li>
+          <li><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-icons" role="group" aria-label="Quick actions">
+        <!-- Heart -->
+        <a href="#favorites" class="icon-btn" aria-label="Favorites">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 1 0-7.8 7.8l1 1 7.8 7.8 7.8-7.8 1-1a5.5 5.5 0 0 0 0-7.8z" />
+          </svg>
+        </a>
+        <!-- Profile -->
+        <a href="#profile" class="icon-btn" aria-label="Profile">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+            <circle cx="12" cy="7" r="4" />
+          </svg>
+        </a>
+        <!-- Cart -->
+        <a href="#cart" class="icon-btn" aria-label="Cart">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="9" cy="21" r="1" />
+            <circle cx="20" cy="21" r="1" />
+            <path d="M1 1h4l2.68 12.39a2 2 0 0 0 2 1.61h7.72a2 2 0 0 0 2-1.61L23 6H6" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section id="home" class="hero-section">
+      <div class="container hero-inner">
+        <div class="hero-eyebrow">Signature styles, crafted for you</div>
+        <h1 class="hero-title">Make a bold look with your signature hair style.</h1>
+        <p class="hero-sub">Discover premium wigs and salon services designed to match your personality, boost your confidence, and let you express yourself effortlessly.</p>
+
+        <div class="cta-row">
+          <a href="#wigs" class="btn btn-beige">Explore Wig Collection</a>
+          <a href="booking.html" class="btn btn-pink">Book a Salon Session</a>
         </div>
-    </header>
-
-    <main class="main-content">
-        <section class="hero-section">
-            <div class="hero-image-wrapper">
-                <img src="images/wig-store.jpg" alt="Professional wig store showcase" class="hero-image">
-            </div>
-            <div class="container">
-                <div class="hero-content">
-                    <h2 class="hero-title">Welcome to Debbiehair</h2>
-                    <p class="hero-subtitle">Beauty That Satisfies</p>
-                    <a href="booking.html" class="btn btn-primary">Book an Appointment</a>
-                </div>
-            </div>
-        </section>
-
-        <section class="content-section" id="services">
-            <div class="container">
-                <h2 class="section-title">Our Services</h2>
-                <p class="section-description">Professional hair care tailored to your needs</p>
-            </div>
-        </section>
-
-        <section class="content-section" id="gallery">
-            <div class="container">
-                <h2 class="section-title">Gallery</h2>
-                <p class="section-description">View our latest work and transformations</p>
-            </div>
-        </section>
-
-        <section class="content-section" id="about">
-            <div class="container">
-                <h2 class="section-title">About Us</h2>
-                <p class="section-description">Learn more about our story and commitment to excellence</p>
-            </div>
-        </section>
-
-        <section class="content-section" id="contact">
-            <div class="container">
-                <h2 class="section-title">Contact Us</h2>
-                <p class="section-description">Get in touch to book your appointment</p>
-            </div>
-        </section>
-    </main>
-
-    <footer class="site-footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3 class="footer-title">Debbiehair</h3>
-                    <p class="footer-text">Your trusted partner for professional hair care and styling.</p>
-                </div>
-                
-                <div class="footer-section">
-                    <h4 class="footer-heading">Quick Links</h4>
-                    <ul class="footer-links">
-                        <li><a href="#home" class="footer-link">Home</a></li>
-                        <li><a href="#services" class="footer-link">Services</a></li>
-                        <li><a href="#gallery" class="footer-link">Gallery</a></li>
-                        <li><a href="#about" class="footer-link">About</a></li>
-                        <li><a href="#contact" class="footer-link">Contact</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer-section">
-                    <h4 class="footer-heading">Contact Info</h4>
-                    <ul class="footer-info">
-                        <li class="footer-text">Email: info@debbiehair.com</li>
-                        <li class="footer-text">Phone: (555) 123-4567</li>
-                        <li class="footer-text">Address: 123 Beauty Lane</li>
-                    </ul>
-                </div>
-                
-                <div class="footer-section">
-                    <h4 class="footer-heading">Hours</h4>
-                    <ul class="footer-info">
-                        <li class="footer-text">Mon-Fri: 9:00 AM - 7:00 PM</li>
-                        <li class="footer-text">Saturday: 10:00 AM - 6:00 PM</li>
-                        <li class="footer-text">Sunday: Closed</li>
-                    </ul>
-                </div>
-            </div>
-            
-            <div class="footer-bottom">
-                <p class="copyright">&copy; 2024 Debbiehair. All rights reserved.</p>
-            </div>
+        <div class="rating" aria-label="5.0 rating from over 4000 clients">
+          <span role="img" aria-label="star">⭐</span>
+          5.0
+          <span class="dot" aria-hidden="true"></span>
+          <small>Trusted by 4K+ Clients</small>
         </div>
-    </footer>
 
-    <script src="assets/js/main.js"></script>
+        <!-- Hero gallery: models from the back -->
+        <div class="hero-gallery" id="wigs">
+          <figure class="hero-card">
+            <img src="https://images.unsplash.com/photo-1512204757634-8113fabf7e15?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wyMDkyMnwwfDF8c2VhcmNofDEyfHxobGFpciUyMGJhY2slMjBvZiUyMGhlYWR8ZW58MHx8fHwxNzAwMDAwMDAw" alt="Model from the back with blonde hair" />
+          </figure>
+          <figure class="hero-card">
+            <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wyMDkyMnwwfDF8c2VhcmNofDE2fHxyZWQlMjBoYWlyJTIwYmFjayUyMG9mJTIwaGVhZHxlbnwwfHx8fDE3MDAwMDAwMDA" alt="Model from the back with red hair" />
+          </figure>
+          <figure class="hero-card">
+            <img src="https://images.unsplash.com/photo-1510933433936-763eb6df8f55?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wyMDkyMnwwfDF8c2VhcmNofDYyfHxkYXJrJTIwaGFpciUyMGJhY2slMjBvZiUyMGhlYWR8ZW58MHx8fHwxNzAwMDAwMDAw" alt="Model from the back with natural black hair" />
+          </figure>
+          <figure class="hero-card">
+            <img src="https://images.unsplash.com/photo-1608755728617-3eb8d3fd3a39?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wyMDkyMnwwfDF8c2VhcmNofDE1fHxicm93biUyMGhhaXIlMjBiYWNrJTIwb2YlMjBoZWFkfGVufDB8fHx8MTcwMDAwMDAwMA" alt="Model from the back with brown hair" />
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Collections -->
+    <section id="colors" class="featured content-section" aria-label="Featured hair color collections">
+      <div class="container">
+        <h2 class="featured-title">Featured Collections</h2>
+        <div class="card-grid">
+          <a class="col-card" href="#blonde" aria-label="Blonde Collection">
+            <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?q=80&w=1400&auto=format&fit=crop" alt="Blonde collection" />
+            <span class="label">Blonde Collection</span>
+          </a>
+          <a class="col-card" href="#redhair" aria-label="Redhair Collection">
+            <img src="https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=1400&auto=format&fit=crop" alt="Red hair collection" />
+            <span class="label">Redhair Collection</span>
+          </a>
+          <a class="col-card" href="#natural-black" aria-label="Natural Black Collection">
+            <img src="https://images.unsplash.com/photo-1542232915-4f1442b4b8eb?q=80&w=1400&auto=format&fit=crop" alt="Natural black collection" />
+            <span class="label">Natural Black</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="about content-section">
+      <div class="container about-grid">
+        <div>
+          <h3>About Trissy Beauty Lounge</h3>
+          <p>We craft premium wigs and deliver modern salon experiences tailored to your personality. Our stylists specialize in color, texture, and fit—helping you express yourself with confidence.</p>
+          <p>From everyday elegance to show-stopping transformations, we offer expert consultations, custom fittings, and aftercare to keep your style flawless.</p>
+          <div class="cta-row" style="justify-content:flex-start; margin-top:10px;">
+            <a href="#contact" class="btn btn-beige">Contact Us</a>
+            <a href="booking.html" class="btn btn-pink">Book Now</a>
+          </div>
+        </div>
+        <div>
+          <img src="https://images.unsplash.com/photo-1519699047748-de8e457a634e?q=80&w=1400&auto=format&fit=crop" alt="Trissy Beauty Lounge interior" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Placeholder sections for navigation targets -->
+    <section id="stylists" class="content-section" aria-label="Stylists" style="padding: 30px 0 0"></section>
+    <section id="pricing" class="content-section" aria-label="Pricing" style="padding: 0"></section>
+
+    <!-- Contact -->
+    <section id="contact" class="content-section" aria-label="Contact" style="padding: 0 0 60px;">
+      <div class="container" style="text-align:center;">
+        <p class="hero-sub" style="margin-bottom: 18px;">Have a question or need a custom recommendation?</p>
+        <div class="cta-row">
+          <a href="mailto:hello@trissybeauty.com" class="btn btn-beige">hello@trissybeauty.com</a>
+          <a href="tel:+15551234567" class="btn btn-pink">(555) 123-4567</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <div class="brand" style="margin-bottom:10px;">
+          <span class="brand-mark" aria-hidden="true"></span>
+          <span class="brand-name">Trissy Beauty Lounge</span>
+        </div>
+        <p class="footer-text">Premium wigs and salon services for every shade of you.</p>
+        <div class="socials" aria-label="Social media">
+          <a href="#" aria-label="Instagram">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+            </svg>
+          </a>
+          <a href="#" aria-label="Facebook">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+            </svg>
+          </a>
+          <a href="#" aria-label="Twitter">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53A4.48 4.48 0 0 0 12 8v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <div>
+        <div class="footer-title">Quick Links</div>
+        <nav class="footer-links" aria-label="Footer navigation">
+          <a href="#home" class="footer-link">Home</a>
+          <a href="#colors" class="footer-link">Hair Colors</a>
+          <a href="#wigs" class="footer-link">Wigs</a>
+          <a href="#contact" class="footer-link">Contact</a>
+        </nav>
+      </div>
+
+      <div>
+        <div class="footer-title">Company</div>
+        <div class="footer-links">
+          <a href="#" class="footer-link">About</a>
+          <a href="#" class="footer-link">Careers</a>
+          <a href="#" class="footer-link">Terms</a>
+          <a href="#" class="footer-link">Privacy</a>
+        </div>
+      </div>
+
+      <div>
+        <div class="footer-title">Contact</div>
+        <div class="footer-links">
+          <span class="footer-link">hello@trissybeauty.com</span>
+          <span class="footer-link">(555) 123-4567</span>
+          <span class="footer-link">123 Golden Ave, Suite 12</span>
+        </div>
+      </div>
+    </div>
+    <div class="container copy">© 2024 Trissy Beauty Lounge. All rights reserved.</div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
 </body>
 </html>
