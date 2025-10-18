@@ -91,5 +91,17 @@ All design tokens are defined as CSS variables in `:root` at the top of `styles.
 - Keep images optimized (ideally < 300 KB) for fast loading.
 - Always provide a descriptive `alt` attribute for accessibility.
 
+## Use your Telegram photo as the homepage background
+The homepage hero now uses a background image. To use your Telegram Desktop photo:
+1. Copy the file from your computer:
+   - Windows path you shared: C:\Users\DELL\Downloads\Telegram Desktop\photo_2025-10-18_16-50-52.jpg
+2. Paste it into this project’s images folder and keep the same name:
+   - images/photo_2025-10-18_16-50-52.jpg
+3. Open index.html in your browser. The hero section will display your photo behind the content with a soft white overlay for readability.
+
+Notes:
+- If you prefer a different filename or location, update the path in `assets/css/trissy.css` under the `.hero-section` `background-image`.
+- For best quality and performance, keep the image under ~1MB, landscape orientation, at least 1600px wide.
+
 ## License
 All rights reserved © 2024 Debbiehair
