@@ -85,5 +85,11 @@ All design tokens are defined as CSS variables in `:root` at the top of `styles.
 - Border radius
 - Transitions
 
+## Adding a particular picture
+- Place your image file in the `images/` directory.
+- To show it in the About section, replace `images/wig-store.jpg` with your file using the same name, or update the `src` in `index.html` accordingly.
+- Keep images optimized (ideally < 300 KB) for fast loading.
+- Always provide a descriptive `alt` attribute for accessibility.
+
 ## License
 All rights reserved © 2024 Debbiehair
